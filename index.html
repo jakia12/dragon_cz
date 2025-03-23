@@ -1,0 +1,701 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=2"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+
+    <link rel="icon" href="/static/media/logo.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/static/media/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="/static/media/logo.png"
+    />
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="16x16"
+      href="/static/media/logo.png"
+    />
+    <!-- AOS scroll effect cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link rel="stylesheet" href="./static/style/style.css" />
+    <link rel="stylesheet" href="./static/style/media.css" />
+    <title>Dragon Zodiac</title>
+    <style>
+      .tree1 {
+        transform: rotate(90deg);
+      }
+      .ttl {
+        font-family: genty;
+      }
+      .centr {
+        transform: translate(10px, 10px);
+      }
+
+      .three-column-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .grid-item {
+        text-align: center;
+        background: #f3ba30;
+        padding: 16px;
+        border-radius: 8px;
+      }
+
+      .grid-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+
+      .title {
+        margin-top: 12px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        color: #333;
+      }
+      .vid1 {
+        width: 400px;
+        height: 400px;
+      }
+      @media screen and (max-width: 768px) {
+        .three-column-grid {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 24px;
+          max-width: 1000px;
+          margin: 0 auto;
+          padding: 20px;
+        }
+        .centr {
+          transform: translate(6px, 41px);
+        }
+        .vid1 {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+
+    <main id="root">
+      <nav class="navigation logo-left spaceless z_99 global_padding">
+        <div
+          class="logo_container"
+          data-aos="fade-right"
+          data-aos-duration="500"
+          data-aos-delay="200"
+        >
+          <figure>
+            <img src="./static/media/logo.png" alt="nort logo" />
+          </figure>
+          <h1 class="logo_text gentyFont">$DRAGON</h1>
+        </div>
+
+        <div class="copy_address desktop">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+          ></p>
+          <span
+            class="value"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="200"
+            style="color: #f3ba30"
+            >xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span
+          >
+          <!-- clipboard icon -->
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+           
+            <path
+              d="M280 64l40 0c35.3 0 64 28.7 64 64l0 320c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 128C0 92.7 28.7 64 64 64l40 0 9.6 0C121 27.5 153.3 0 192 0s71 27.5 78.4 64l9.6 0zM64 112c-8.8 0-16 7.2-16 16l0 320c0 8.8 7.2 16 16 16l256 0c8.8 0 16-7.2 16-16l0-320c0-8.8-7.2-16-16-16l-16 0 0 24c0 13.3-10.7 24-24 24l-88 0-88 0c-13.3 0-24-10.7-24-24l0-24-16 0zm128-8a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"
+            />
+          </svg> -->
+          <aside class="message">COPIED</aside>
+        </div>
+
+        <div class="buttons hollow_btn">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
+            <a
+              href="https://app.uniswap.org"
+              target="_blank"
+              class="btn small hollow"
+              title="GET norT"
+              rel="noreferrer"
+              >GET $DRAGON</a
+            >
+          </div>
+        </div>
+
+        <div
+          class="menu_btn"
+          data-aos="fade-left"
+          data-aos-duration="500"
+          data-aos-delay="300"
+        >
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="links">
+          <ul>
+            <li class="copy_address">
+              <p>
+                <span class="value">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+              </p>
+              <img src="./static/media/clipboardBlack.svg" alt="copy" />
+              <aside class="message">COPIED</aside>
+            </li>
+            <li>
+              <a href="https://t.me/CZDragonZodiac" target="_blank">
+                Telegram
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/CZ_DragonZodiac" target="_blank">
+                Twitter
+              </a>
+            </li>
+            <li><a href="dextlink" target="_blank"> Chart </a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section id="hero" class="h-split p-oriented spaceless ltr">
+        <div
+          class="grid-x align-middle justify global_maxWidth hero_content_container z_99"
+        >
+          <div class="cell-8 cnt-txt hero_content">
+            <h1
+              class="hero_title"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              Meet <span class="title_nort gentyFont">$DRAGON</span>
+            </h1>
+            <div
+              class="cnt speech"
+              data-aos="fade-right"
+              data-aos-duration="500"
+              data-aos-delay="400"
+            >
+              <p class="enlarged about_hero black_color" style="color: #fff">
+                Dragon Zodiac
+              </p>
+            </div>
+            <div class="get_btn social_grup">
+              <div
+                class="socials"
+                data-aos="fade-right"
+                data-aos-duration="500"
+                data-aos-delay="600"
+              >
+                <a
+                  class="circle"
+                  href="https://x.com/CZ_DragonZodiac"
+                  rel="noreferrer"
+                  title="Jomon Twitter"
+                  target="_blank"
+                  ><i data-ico="tw"></i></a
+                ><a
+                  class="circle"
+                  href="https://t.me/CZDragonZodiac"
+                  rel="noreferrer"
+                  title="Jomon Telegram"
+                  target="_blank"
+                  ><i data-ico="tg"></i></a
+                ><a
+                  class="circle"
+                  href="dextlink"
+                  rel="noreferrer"
+                  title="Jomon Dextools"
+                  target="_blank"
+                  ><i data-ico="dextools"></i></a
+                ><a
+                  class="circle"
+                  href="https://dexscreener.com/BNBereum/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                  rel="noreferrer"
+                  title="Jomon DexScreener"
+                  target="_blank"
+                  ><i data-ico="dexscreener"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="cnt-img hero_img"
+            data-aos="fade-left"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
+            <video class="vid" autoplay="" loop="" muted="">
+              <source src="/static/media/webm/1.webm" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.         
+            </video>
+          </div>
+        </div>
+
+        <div class="note fw z_99">
+          <div class="marquee bordered marquee-left">
+            <div class="marquee-el" style="animation-duration: 45s">
+              <p class="ttl">
+                $DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;
+              </p>
+            </div>
+            <div class="marquee-el" style="animation-duration: 45s">
+              <p class="ttl">
+                $DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;$DRAGON&nbsp;&nbsp;
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="tree_images">
+          <img src="./static/media/tree1.png" alt="tree" class="tree1" />
+          <img src="./static/media/tree2.png" alt="tree" class="tree2" />
+        </div>
+      </section>
+
+      <section id="about" class="about Midorima_font">
+        <div class="centr" style="text-align: center; margin: 0 auto">
+          <video class="vid1" autoplay="" loop="" muted="">
+            <source src="/static/media/webm/10.webm" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.         
+          </video>
+        </div>
+        <h2
+          class="title_section ttl"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="200"
+        >
+          ABOUT <span> US</span>
+        </h2>
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">I am a dragon zodiac.</p>
+          &mdash; CZ 🔶 BNB (@cz_binance)
+          <a
+            href="https://twitter.com/cz_binance/status/1591406568268238850?ref_src=twsrc%5Etfw"
+            >November 12, 2022</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="300"
+          class="aboutText"
+          style="color: #fff"
+        >
+          CZ, embodies the bold spirit of the Dragon in Chinese astrology — a
+          symbol of strength, leadership, and relentless ambition. Born in the
+          Year of the Dragon, CZ has always carried the fire of innovation, a
+          natural drive to lead, and the courage to challenge the status quo. As
+          the founder of Binance, one of the world’s largest cryptocurrency
+          exchanges, CZ has become a trailblazer in the digital finance world.
+          Like the Dragon — confident, wise, and charismatic — he moves with
+          purpose, foresight, and a belief in building systems that empower
+          people globally.
+        </p>
+
+        <div class="cloud_container">
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 0%; --top: 18%; animation-delay: -15s"
+          />
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 70%; --top: 90%"
+          />
+        </div>
+      </section>
+
+      <section id="how-buy" class="how-buy overflow-hidden relative_element">
+        <div class="container-fluid">
+          <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="300">
+            <video
+              autoplay=""
+              loop=""
+              muted=""
+              class="how-buy__img _mobile"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+              data-aos-delay="300"
+            >
+              <source src="/static/media/webm/5.webm" type="video/mp4" />
+              <source src="movie.ogg" type="video/ogg" />
+              Your browser does not support the video tag.         
+            </video>
+          </div>
+
+          <h2
+            class="title_section"
+            data-aos="fade-up"
+            data-aos-duration="500"
+            data-aos-delay="300"
+          >
+            How To Buy
+          </h2>
+
+          <div class="how-buy__wrapper">
+            <div>
+              <video
+                autoplay=""
+                loop=""
+                muted=""
+                class="how-buy__img"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-delay="300"
+              >
+                <source src="/static/media/webm/5.webm" type="video/mp4" />
+                <source src="movie.ogg" type="video/ogg" />
+                Your browser does not support the video tag.         
+              </video>
+            </div>
+
+            <div class="how-buy__wrap">
+              <div class="how-buy__item howItem1">
+                <div
+                  class="how-buy__item-number"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-delay="300"
+                >
+                  1
+                </div>
+                <div
+                  class="how-buy__item-content happyDeamer_font"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-delay="300"
+                >
+                  <span class="font-bold uppercase ttl"> Create a Wallet </span>
+                  <p>
+                    download metamask or your wallet of choice from the app
+                    store or google play store for free. Desktop users, download
+                    the google chrome extension by going to metamask.io.
+                  </p>
+                </div>
+              </div>
+              <div class="how-buy__item howItem2">
+                <div
+                  class="how-buy__item-number"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  data-aos-delay="400"
+                >
+                  2
+                </div>
+                <div
+                  class="how-buy__item-content happyDeamer_font"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  data-aos-delay="400"
+                >
+                  <span class="font-bold uppercase ttl"> Get Some BNB </span>
+                  <p>
+                    Have BNB in your wallet to switch to $DRAGON. If you don’t
+                    have any BNB, you can buy directly on metamask, transfer
+                    from another wallet.
+                  </p>
+                </div>
+              </div>
+              <div class="how-buy__item howItem3">
+                <div
+                  class="how-buy__item-number"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-delay="500"
+                >
+                  3
+                </div>
+                <div
+                  class="how-buy__item-content happyDeamer_font"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                  data-aos-delay="500"
+                >
+                  <span class="font-bold uppercase plMedium ttl">
+                    Go to Pancakeswap
+                  </span>
+                  <p class="plMedium">
+                    Go to pancakeswap.finance in google chrome . Connect your
+                    wallet. Paste the $DRAGON token address into Pancakeswap,
+                    select $DRAGON, and confirm.
+                  </p>
+                </div>
+              </div>
+              <div class="how-buy__item howItem4">
+                <div
+                  class="how-buy__item-number"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  data-aos-delay="600"
+                >
+                  4
+                </div>
+                <div
+                  class="how-buy__item-content happyDeamer_font"
+                  data-aos="fade-left"
+                  data-aos-duration="500"
+                  data-aos-delay="600"
+                >
+                  <span class="font-bold uppercase ttl">
+                    Switch BNB for $DRAGON
+                  </span>
+                  <p>
+                    switch BNB for $DRAGON. We have ZERO taxes so you don’t need
+                    to worry about buying with a specific slippage.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cloud_container">
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 30%; --top: 5%; animation-delay: -3s"
+          />
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 70%; --top: 50%"
+          />
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 40%; --top: 90%; animation-delay: -10s"
+          />
+        </div>
+      </section>
+
+      <section class="tokenomics">
+        <h2
+          class="tokenomics__head title_section ttl"
+          data-aos="fade-up"
+          data-aos-duration="500"
+          data-aos-delay="300"
+        >
+          DRAGONOMICS
+        </h2>
+
+        <div class="tokenomics__wrap">
+          <div class="three-column-grid">
+            <div class="grid-item">
+              <img src="/static/media/1.png" alt="Image 1" />
+              <p class="title">Lp : Locked</p>
+            </div>
+            <div class="grid-item">
+              <img src="/static/media/2.png" alt="Image 2" />
+              <p class="title">Ticker : $DRAGON</p>
+            </div>
+            <div class="grid-item">
+              <img src="/static/media/3.png" alt="Image 3" />
+              <p class="title">Tax : 0/0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cloud_container">
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 30%; --top: 18%; animation-delay: -4s"
+          />
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 70%; --top: 40%"
+          />
+          <img
+            src="./static/media/cloud.png"
+            alt="cloud"
+            class="cloud_img"
+            style="--left: 50%; --top: 80%; animation-delay: -7s"
+          />
+        </div>
+      </section>
+
+      <section id="contract" class="spaceless" data-theme="light">
+        <div class="grid-x align-middle align-center contract_content">
+          <div class="cell-12">
+            <div class="btn-group social_grup align-center">
+              <div
+                class="link_contract"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-delay="200"
+              >
+                <a
+                  href="https://t.me/CZDragonZodiac"
+                  class="btn primary large"
+                  title="Telegram"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><span class="btn-circ"
+                    ><i data-ico="tg" data-theme="yellow"></i
+                  ></span>
+                  <p class="stroke_text">TELEGRAM</p>
+                </a>
+              </div>
+
+              <div
+                class="link_contract"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-delay="300"
+              >
+                <a
+                  href="https://x.com/CZ_DragonZodiac"
+                  class="btn secondary large"
+                  title="Twitter"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><span class="btn-circ"
+                    ><i data-ico="tw" data-theme="yellow"></i
+                  ></span>
+                  <p>TWITTER</p>
+                </a>
+              </div>
+
+              <div
+                class="link_contract"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+                data-aos-delay="400"
+              >
+                <a
+                  href="dextlink"
+                  class="btn secondary large"
+                  title="DEXTOOLS"
+                  rel="noreferrer"
+                  target="_blank"
+                  ><span class="btn-circ"
+                    ><i data-ico="dextools" data-theme="yellow"></i
+                  ></span>
+                  <p>DEXTOOLS</p>
+                </a>
+              </div>
+            </div>
+
+            <section
+              class="contractCopy cell-8"
+              data-aos="fade-up"
+              data-aos-duration="500"
+              data-aos-delay="700"
+            >
+              <input
+                class="value"
+                type="text"
+                value="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                style="position: fixed; left: -9999px"
+              />
+              <p class="clipboard stroke_text">
+                <span class="reduced">0xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</span>
+                <i data-ico="clipboard"></i>
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- cloud -->
+      <div class="cloud_container">
+        <img
+          src="./static/media/cloud.png"
+          alt="cloud"
+          class="cloud_img"
+          style="--left: 10%; --top: 18%; animation-delay: -10s"
+        />
+        <img
+          src="./static/media/cloud.png"
+          alt="cloud"
+          class="cloud_img"
+          style="--left: 80%; --top: 90%"
+        />
+        <img
+          src="./static/media/cloud.png"
+          alt="cloud"
+          class="cloud_img"
+          style="--left: 30%; --top: 70%; animation-delay: -5s"
+        />
+      </div>
+    </main>
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollSmoother.min.js"></script>
+
+    <!-- lottie -->
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+
+    <!-- aos js library animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="./static/js/index.js"></script>
+    <script src="./static/js/animations.js"></script>
+  </body>
+</html>
